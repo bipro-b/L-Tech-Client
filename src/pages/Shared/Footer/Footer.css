@@ -1,0 +1,17 @@
+.footer{
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:auto;  
+   background: black;
+   color: white;
+}
+.font-icon i {
+    font-size: 20px;
+    margin: 5px;
+}
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
