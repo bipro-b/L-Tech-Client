@@ -5,7 +5,7 @@ import pay from '../../../images/pay.png'
 import './Footer.css'
 const Footer = () => {
     return (
-        <div className="footer pt-3">
+        <div className="footer mt-5 ">
         <Container>
             <Row lg={4} sm={1} md={1}>
             <Col className="">
