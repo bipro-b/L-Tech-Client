@@ -11,7 +11,7 @@ const NavBar = () => {
     }
    
     return (
-        <div className="header" >
+        <div className="header " >
             <Navbar bg='dark' style={{ color: 'rgba(0, 0, 0, 0.312)' }} variant={"dark"} expand="lg">
                 <Container>
                     <Navbar.Brand href="home">

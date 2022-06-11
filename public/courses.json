@@ -1,0 +1,73 @@
+[
+    {
+        "id": "1000",
+        "category": "Academic",
+        "name": "HSC ICT",
+        "description":"Good Course for new student and will be better prepared",
+        "price": "200",
+        "img": "https://ak.picdn.net/shutterstock/videos/7286434/thumb/1.jpg"
+    },
+    {
+        "id": "1001",
+        "category": "Academic",
+        "name": "HSC MATH",
+        "price": "300",
+        "img": "https://i.pinimg.com/originals/c8/a0/ab/c8a0aba1b7254235aa602eae0754058c.jpg"
+    },
+    {
+        "id": "1002",
+        "category": "Technical",
+        "name": "Cyber Security",
+        "price": "150",
+        "img": "https://www.kaspersky.com/content/en-global/images/repository/isc/2017-images/What-is-Cyber-Security.jpg"
+    },
+    {
+        "id": "1002",
+        "category": "Technical",
+        "name": "Data Science with Python",
+        "price": "500",
+        "img": "https://prutor.ai/wp-content/uploads/data-science-using-python.png"
+    },
+    {
+        "id": "1004",
+        "category": "Marketing",
+        "name": "Facebook Marketing",
+        "price": "350",
+        "img": "https://flynaut.com/wp-content/uploads/2016/03/FacebookFB1.jpg"
+    },
+    {
+        "id": "1005",
+        "category": "Freelancing",
+        "name": "Content Writing",
+        "price": "100",
+        "img": "https://www.seoclerk.com/pics/want59462-1oT05c1520405948.jpg"
+    },
+    {
+        "id": "1006",
+        "category": "Technical",
+        "name": "MS Excel",
+        "price": "150",
+        "img": "https://img.theweek.in/content/dam/week/news/sci-tech/images/2021/2/16/excel.jpg"
+    },
+    {
+        "id": "1007",
+        "category": "Technical",
+        "name": "MS Powerpoint",
+        "price": "100",
+        "img": "https://cyberseniors.org/wp-content/uploads/2021/04/Microsoft-PowerPoint-logo.jpeg"
+    },
+    {
+        "id": "1008",
+        "category": "Technical",
+        "name": "Android Developing",
+        "price": "3000",
+        "img": "https://bs-uploads.toptal.io/blackfish-uploads/uploaded_file/file/194722/image-1582811959686-b31494c241bebb769c3001a8d24cdc16.png"
+    },
+    {
+        "id": "1009",
+        "category": "Technical",
+        "name": "Advance Java",
+        "price": "2000",
+        "img": "https://pbs.twimg.com/profile_images/1410016948977422337/rKU8iR89_400x400.png"
+    }
+]

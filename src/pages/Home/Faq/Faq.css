@@ -1,0 +1,11 @@
+.faq{
+    width: 50%;
+}
+.text{
+    font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+background-color: white;
+}
+.show{
+    background-color: goldenrod;
+}
