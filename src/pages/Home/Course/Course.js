@@ -1,11 +1,11 @@
 import React from "react";
 import { Row, Col, Button } from "react-bootstrap";
-
 import { Link } from "react-router-dom";
 import "./Course.css";
+import Rating from "react-rating";
 
 const Course = ({ course }) => {
-  const { name, img, price, category } = course;
+  const { name, img, price, star, category } = course;
   return (
     <Row className="course my-2" xs={1} md={2} lg={2} spacing={1}>
       <Col className="img-container ">
@@ -45,7 +45,13 @@ const Course = ({ course }) => {
           </style>
           <h3>Course: {name}</h3>
           <h3>Categorey: {category}</h3>
-          <h5>${price}</h5>
+          <Rating
+            style={{ color: "goldenrod" }}
+            initialRating={star}
+            emptySymbol="far fa-star icon-color"
+            fullSymbol="fas fa-star icon-color"
+            readonly
+          />
 
           <br />
           <Link to="/about">

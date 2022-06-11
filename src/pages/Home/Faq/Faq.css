@@ -4,8 +4,10 @@
 .text{
     font-family: 'Oswald', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;
-background-color: white;
+
 }
-.show{
+
+.accord{
+    text-align: left;
     background-color: goldenrod;
 }
