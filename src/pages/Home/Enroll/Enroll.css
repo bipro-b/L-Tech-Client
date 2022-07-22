@@ -1,0 +1,20 @@
+.take {
+
+    background-color: aliceblue;
+}
+
+.take form {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.take form input,
+textarea {
+    width: 40%;
+    margin-bottom: 10px;
+    background-image: linear-gradient(rgba(0, 102, 255, 0.54), rgba(255, 255, 0, 0.567));
+}

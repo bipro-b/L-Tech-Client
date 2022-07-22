@@ -1,83 +1,74 @@
 [
     {
         "id": "1000",
-        "category": "Academic",
-        "name": "HSC ICT",
-        "description":"Good Course for new student and will be better prepared",
+        "name": "Artificial Intelligence",
+        "description":"Artificial intelligence is widely used to provide personalised recommendations to people, based for example on their previous searches and purchases or other online behaviour. AI is hugely important in commerce: optimising products, planning inventory, logistics etc.",
         "star":"5",
         "price": "200",
-        "img": "https://ak.picdn.net/shutterstock/videos/7286434/thumb/1.jpg"
+        "img": "https://cdn.pixabay.com/photo/2018/09/18/11/19/artificial-intelligence-3685928_1280.png"
     },
     {
         "id": "1001",
-        "category": "Academic",
-        "name": "HSC MATH",
+        "name": "Machine Learning",
+        "description":"Machine learning can help with the diagnosis of diseases. Many physicians use chatbots with speech recognition capabilities to discern patterns in symptoms. Real-world examples for medical diagnosis: Assisting in formulating a diagnosis or recommends a treatment option.",
         "star":"4.5",
         "price": "300",
-        "img": "https://i.pinimg.com/originals/c8/a0/ab/c8a0aba1b7254235aa602eae0754058c.jpg"
+        "img": "https://icon-library.com/images/machine-learning-icon/machine-learning-icon-16.jpg"
     },
     {
         "id": "1002",
-        "category": "Technical",
-        "name": "Cyber Security",
+        "name": "Deep Learning",
+        "description":"Deep learning networks learn by discovering intricate structures in the data they experience. By building computational models that are composed of multiple processing layers, the networks can create multiple levels of abstraction to represent the data.",
         "price": "150",
         "star":"4.5",
-        "img": "https://www.kaspersky.com/content/en-global/images/repository/isc/2017-images/What-is-Cyber-Security.jpg"
+        "img": "https://spng.subpng.com/20201112/aoz/transparent-ai-icon-artificial-intelligence-icon-artificial-in-5fad4d5188f720.741264331605193041561.jpg"
     },
     {
         "id": "1002",
-        "category": "Technical",
-        "name": "Data Science with Python",
+        "name": "Block Chain",
         "price": "500",
+        "description":"Blockchain is a shared, immutable ledger that facilitates the process of recording transactions and tracking assets in a business network. An asset can be tangible.",
         "star":"4.5",
-        "img": "https://prutor.ai/wp-content/uploads/data-science-using-python.png"
+        "img": "https://d3lkc3n5th01x7.cloudfront.net/wp-content/uploads/2021/08/04022409/WHAT-IS-BLOCKCHAIN.png"
     },
     {
         "id": "1004",
-        "category": "Marketing",
-        "name": "Facebook Marketing",
+        "name": "Internet of Things",
+        "description":"The Internet of Things (IoT) describes the network of physical objects—“things”—that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the internet.",
         "price": "350",
         "star":"5",
-        "img": "https://flynaut.com/wp-content/uploads/2016/03/FacebookFB1.jpg"
+        "img": "http://www.futurefundamentals.com/wp-content/uploads/2018/08/iot.png"
     },
     {
         "id": "1005",
-        "category": "Freelancing",
-        "name": "Content Writing",
+        "name": "Data Science",
+        "description":"Data science is a very good career with tremendous opportunities for advancement in the future. Already, demand is high, salaries are competitive, and the perks are numerous .",
         "price": "100",
         "star":"4.5",
-        "img": "https://www.seoclerk.com/pics/want59462-1oT05c1520405948.jpg"
+        "img": "https://cdn-icons-png.flaticon.com/512/4108/4108969.png"
     },
     {
         "id": "1006",
-        "category": "Technical",
-        "name": "MS Excel",
+        "name": "Data Engineer",
+        "description":"Data engineers work in a variety of settings to build systems that collect, manage, and convert raw data into usable information for data scientists and business analysts to interpret. ",
         "price": "150",
         "star":"4.5",
-        "img": "https://img.theweek.in/content/dam/week/news/sci-tech/images/2021/2/16/excel.jpg"
+        "img": "https://cdn3.iconfinder.com/data/icons/business-trade-1/64/17-512.png"
     },
     {
         "id": "1007",
-        "category": "Technical",
-        "name": "MS Powerpoint",
+        "name": "Amazon Web Services",
+        "description":"Amazon web service is an online platform that provides scalable and cost-effective cloud computing solutions. AWS is a broadly adopted cloud platform that offers several on-demand operations like compute power, database storage, content delivery, etc., to help corporates scale and grow",
         "star":"5",
         "price": "100",
-        "img": "https://cyberseniors.org/wp-content/uploads/2021/04/Microsoft-PowerPoint-logo.jpeg"
+        "img": "https://www.dlf.pt/dfpng/middlepng/437-4376137_aws-white-version-logo-png-download-amazon-white.png"
     },
     {
         "id": "1008",
-        "category": "Technical",
         "name": "Android Developing",
+        "description":"Android software development is the process by which applications are created for devices running the Android operating system. Google states that Android apps can be written using Kotlin, Java, and C++ languages using the Android software development kit (SDK), while using other languages is also possible",
         "star":"4.5",
         "price": "3000",
-        "img": "https://bs-uploads.toptal.io/blackfish-uploads/uploaded_file/file/194722/image-1582811959686-b31494c241bebb769c3001a8d24cdc16.png"
-    },
-    {
-        "id": "1009",
-        "category": "Technical",
-        "name": "Advance Java",
-        "star":"5",
-        "price": "2000",
-        "img": "https://pbs.twimg.com/profile_images/1410016948977422337/rKU8iR89_400x400.png"
+        "img": "https://w7.pngwing.com/pngs/521/500/png-transparent-web-development-mobile-app-development-android-software-development-phone-stereo-weather-forecast-electronics-web-design-phone-icon.png"
     }
 ]

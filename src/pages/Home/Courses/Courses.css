@@ -3,45 +3,21 @@
     background-color: goldenrod;
     color: white;
     border-radius: 3px;
-}
-
-/* .course{
-    border-bottom: 1px solid lightgray;
-    margin-right: 15px ;
-    margin-left: 10px;
-} */
-
-
-.course{
-    /* display: flex; */
-    border-bottom: 1px solid lightgray;
-    margin-right: 15px ;
-    margin-left: 10px;
-}
-@media only screen and (min-width:991px ){
-  .img-container img:hover{
-    position: relative;
-    left: 100px;
-  }
+    box-shadow: 10px 20px 10px ;
+    margin-bottom: 0px;
 }
 
 
-.img-container img:hover{
-  
-  border-bottom: 10px solid black;
-  box-shadow: inset;
-  transition-duration: .5s;
-  transform: scale(1,1);
-  /* padding: 10px; */
-    /* width: 400px; */
-} 
+.search-container {
+  background-color: rgba(0, 0, 0, 0.832);
+  text-align: center;
+  line-height: 40px;
+  margin-top: 0px;
 
-.img-container img:hover{
-    border-top: 10px solid goldenrod;
-    box-shadow: inset;
-    transition-duration: .75s;
-  } 
+}
 
-  .btn-back:hover{
-       background-color: goldenrod;
-  }
+.search-container input {
+  width: 50%;
+  margin-top: 0px;
+
+}
