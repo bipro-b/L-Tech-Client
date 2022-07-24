@@ -8,6 +8,7 @@ import Banner from "../Banner/Banner";
 
 import Courses from "../Courses/Courses";
 import Faq from "../Faq/Faq";
+import Like from "../Like/Like";
 
 import Review from "../Review/Review";
 
@@ -20,6 +21,7 @@ const Home = () => {
         <Adv />
         <Courses />
         <Faq />
+        <Like />
         <Review />
       </Container>
 

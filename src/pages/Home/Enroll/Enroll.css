@@ -1,8 +1,8 @@
-.take {
 
-    background-color: aliceblue;
+.thumb img{
+    
+    box-shadow: 10px 7px 10px;
 }
-
 .take form {
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@
 
 .take form input,
 textarea {
-    width: 40%;
+    width: 70%;
     margin-bottom: 10px;
     background-image: linear-gradient(rgba(0, 102, 255, 0.54), rgba(255, 255, 0, 0.567));
 }
