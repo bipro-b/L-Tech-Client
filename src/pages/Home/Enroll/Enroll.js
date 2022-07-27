@@ -34,7 +34,7 @@ const Enroll = () => {
       .post("https://fierce-escarpment-93712.herokuapp.com/enroll", data)
       .then((res) => {
         if (res.data.insertedId) {
-          alert("Added successfully");
+          alert("Submit successfully");
           reset();
         }
       });
@@ -48,7 +48,9 @@ const Enroll = () => {
           <Typography>
             <img style={{ borderRadius: "50%" }} src={user.photoURL} alt="" />
             <h2 style={{ color: "black" }}>
-              Hey "{user?.displayName}" Welcome
+              Hey "
+              <span style={{ color: "goldenrod" }}>{user?.displayName}</span>"
+              Welcome
             </h2>
           </Typography>
         </Grid>
@@ -58,7 +60,10 @@ const Enroll = () => {
               className="course-details"
               sx={{ alignItems: "center", marginBottom: "20px" }}
             >
-              <Typography className="thumb" sx={{ mx: "auto" }}>
+              <Typography
+                className="thumb"
+                sx={{ mx: "auto", marginBottom: "20px" }}
+              >
                 <img style={{ width: "50%" }} src={bookDetails?.img} alt="" />
               </Typography>
               <Typography

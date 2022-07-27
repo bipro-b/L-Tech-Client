@@ -14,7 +14,6 @@ import useAuth from "../../../hooks/useAuth";
 import NavBar from "../../Shared/Navbar/NavBar";
 import reg from "../../../images/reg.PNG";
 import { Row } from "react-bootstrap";
-// import login from '../../../images/login.png'
 
 const Login = () => {
   const [loginData, setLoginData] = useState({});

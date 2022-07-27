@@ -3,10 +3,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import AuthProvider from "./Contexts/AuthProvider";
 import About from "./pages/About/About/About";
+import Blog from "./pages/Blog/Blog";
 import Dashboard from "./pages/Dashboard/Dashboard/Dashboard";
 import Enroll from "./pages/Home/Enroll/Enroll";
 import Home from "./pages/Home/Home/Home";
 import Login from "./pages/Logging/Login/Login";
+import PrivateRoute from "./pages/Logging/PrivateRoute/PrivateRoute";
 import Register from "./pages/Logging/Register/Register";
 import NotFound from "./pages/Notfound/Notfound";
 
@@ -18,8 +20,16 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
-            <Route path="/:bookId" element={<Enroll />} />
+            <Route
+              path="/:bookId"
+              element={
+                <PrivateRoute>
+                  <Enroll />
+                </PrivateRoute>
+              }
+            />
             <Route path="/about" element={<About />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />

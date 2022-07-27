@@ -39,8 +39,8 @@ const NavBar = () => {
               <NavLink to="/about" activeStyle={activeStyle}>
                 About
               </NavLink>
-              <NavLink to="/more" activeStyle={activeStyle}>
-                More
+              <NavLink to="/blog" activeStyle={activeStyle}>
+                Blog
               </NavLink>
             </Nav>
             {user.email && (
