@@ -1,73 +1,52 @@
-import React, { useState, useEffect } from "react";
-import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
-import { FaQuoteRight } from "react-icons/fa";
-import data from "./data";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+// import "swiper/swiper.min.css";
+// import "swiper/components/effect-coverflow/effect-coverflow.min.css";
+// import "swiper/components/pagination/pagination.min.css";
+
+import "./Review.css";
+
+import { data } from "./data";
+
+import SwiperCore, { EffectCoverflow, Pagination } from "swiper/core";
+
+SwiperCore.use([EffectCoverflow, Pagination]);
+
 const Review = () => {
-  const [people, setPeople] = useState(data);
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const lastIndex = people.length - 1;
-    if (index < 0) {
-      setIndex(lastIndex);
-    }
-    if (index > lastIndex) {
-      setIndex(0);
-    }
-  }, [index, people]);
-
-  // autoslide, clearInterval = een cleanup functie noodzakelijk bij interval
-  useEffect(() => {
-    let slider = setInterval(() => {
-      setIndex(index + 1);
-    }, 3000);
-    return () => clearInterval(slider);
-  }, [index]);
-
   return (
-    <div className="section">
-      <div className="title">
-        <h2>
-          <span>/</span>reviews
-        </h2>
+    <section id="testimonials" className="main-testimonials-wrapper">
+      <Swiper
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 6,
+          slideShadows: true,
+        }}
+        // pagination={true}
+      >
+        {data.map((item, key) => (
+          <SwiperSlide>
+            <img src={item.image} alt={item.name} />
+            <h3>{item.name}</h3>
+            <p>{item.testimony}</p>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      <div className="quote-parent">
+        <div className="quote n-box1 flex-with-center">
+          <h1>Quote?!</h1>
+          <div className="quote-content">
+            <p>“ Knowledge is power.” </p>
+          </div>
+        </div>
       </div>
-      <div className="section-center">
-        {people.map((person, personIndex) => {
-          const { id, image, name, title, quote } = person;
-          let position = "nextSlide";
-          if (personIndex === index) {
-            position = "activeSlide";
-          }
-          if (
-            personIndex === index - 1 ||
-            (index === 0 && personIndex === people.length - 1)
-          ) {
-            position = "lastSlide";
-          }
-          return (
-            <div key={id} className={position}>
-              <img
-                src={image}
-                alt={name}
-                className="person-img"
-                style={{ width: "300px" }}
-                v
-              />
-              <h4>{name}</h4>
-              <p className="title">{title}</p>
-              <p className="text">{quote}</p>
-              <FaQuoteRight className="icon" />
-            </div>
-          );
-        })}
-        <button className="prev" onClick={() => setIndex(index - 1)}>
-          <FiChevronLeft />
-        </button>
-        <button className="next" onClick={() => setIndex(index + 1)}>
-          <FiChevronRight />
-        </button>
-      </div>
-    </div>
+    </section>
   );
 };
 

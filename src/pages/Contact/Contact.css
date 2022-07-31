@@ -1,0 +1,21 @@
+.contact form{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    background-color: #17395A;
+    width: 75%;
+    padding-bottom: 20px;
+}
+
+input {
+    width: 600px;
+  }
+  textarea {
+    height: 10em;
+    width: 600px;
+  }

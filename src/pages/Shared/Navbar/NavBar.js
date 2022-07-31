@@ -39,8 +39,8 @@ const NavBar = () => {
               <NavLink to="/about" activeStyle={activeStyle}>
                 About
               </NavLink>
-              <NavLink to="/blog" activeStyle={activeStyle}>
-                Blog
+              <NavLink to="/contact" activeStyle={activeStyle}>
+                Contact
               </NavLink>
             </Nav>
             {user.email && (
@@ -49,11 +49,16 @@ const NavBar = () => {
               </NavLink>
             )}
 
-            {user.email && (
+            {/* {user.email && (
               <span style={{ color: "white" }}> {user.displayName} </span>
-            )}
+            )} */}
             {user.email ? (
-              <button onClick={logout}>log Out</button>
+              <button
+                style={{ backgroundColor: "#212529", color: "white" }}
+                onClick={logout}
+              >
+                log Out
+              </button>
             ) : (
               <NavLink to="/login">Login</NavLink>
             )}

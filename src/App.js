@@ -3,7 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import AuthProvider from "./Contexts/AuthProvider";
 import About from "./pages/About/About/About";
-import Blog from "./pages/Blog/Blog";
+import Contact from "./pages/Contact/Contact";
+
 import Dashboard from "./pages/Dashboard/Dashboard/Dashboard";
 import Enroll from "./pages/Home/Enroll/Enroll";
 import Home from "./pages/Home/Home/Home";
@@ -29,7 +30,7 @@ function App() {
               }
             />
             <Route path="/about" element={<About />} />
-            <Route path="/blog" element={<Blog />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />

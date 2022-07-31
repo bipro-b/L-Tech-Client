@@ -30,14 +30,12 @@ const Enroll = () => {
   }, [details, bookId]);
 
   const onSubmit = (data) => {
-    axios
-      .post("https://fierce-escarpment-93712.herokuapp.com/enroll", data)
-      .then((res) => {
-        if (res.data.insertedId) {
-          alert("Submit successfully");
-          reset();
-        }
-      });
+    axios.post("http://localhost:5000/enroll", data).then((res) => {
+      if (res.data.insertedId) {
+        alert("Submit successfully");
+        reset();
+      }
+    });
   };
   return (
     <>
@@ -47,11 +45,13 @@ const Enroll = () => {
         <Grid sx={{ alignItems: "center", marginBottom: "20px" }}>
           <Typography>
             <img style={{ borderRadius: "50%" }} src={user.photoURL} alt="" />
-            <h2 style={{ color: "black" }}>
-              Hey "
-              <span style={{ color: "goldenrod" }}>{user?.displayName}</span>"
-              Welcome
-            </h2>
+            <div style={{ color: "black" }} className="welcome">
+              <p id="animateText">
+                Hey "
+                <span style={{ color: "goldenrod" }}>{user?.displayName}</span>"
+                Welcome.
+              </p>
+            </div>
           </Typography>
         </Grid>
         <Row lg={2} md={1}>
