@@ -19,13 +19,13 @@ const Enroll = () => {
   const [bookDetails, setBookDetails] = useState([]);
 
   useEffect(() => {
-    fetch("./courses.json")
+    fetch("http://localhost:5000/courses")
       .then((res) => res.json())
       .then((data) => setDetails(data));
   }, []);
 
   useEffect(() => {
-    const choosedBook = details.find((serv) => serv.id === bookId);
+    const choosedBook = details.find((serv) => serv._id === bookId);
     setBookDetails(choosedBook);
   }, [details, bookId]);
 

@@ -11,9 +11,8 @@ const Courses = () => {
   const [isLoading, setLoading] = useState(false);
   const [display, setDisplay] = useState([]);
   useEffect(() => {
-    // fetch("http://localhost:5000/courses")
-
-    fetch("./courses.json")
+    fetch("http://localhost:5000/courses")
+      // fetch("./courses.json")
       .then((res) => res.json())
       .then((data) => {
         setCourses(data);

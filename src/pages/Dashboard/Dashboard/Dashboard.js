@@ -20,6 +20,10 @@ import {
 } from "react-router-dom";
 import { Button } from "@mui/material";
 import useAuth from "../../../hooks/useAuth";
+import MyEnroll from "../MyEnroll/MyEnroll";
+import Review from "../Review/Review";
+import AddTeacher from "../AddTeacher/AddTeacher";
+import AddAdmin from "../AddAdmin/AddAdmin";
 
 const drawerWidth = 200;
 
@@ -54,37 +58,36 @@ function Dashboard(props) {
 
         {admin || (
           <Box>
-            <Link style={{ textDecoration: "none" }} to={`/dashboard/myapply`}>
+            <Link style={{ textDecoration: "none" }} to={`/dashboard/myEnroll`}>
               {" "}
-              <Button color="inherit">My Apply</Button>
+              <Button color="inherit">My Enroll</Button>
             </Link>
             <br />
             <NavLink style={{ textDecoration: "none" }} to="givereview">
               {" "}
               <Button color="inherit">Review</Button>
             </NavLink>
-            <br />
-            <Link
+            {/* <br /> */}
+            {/*  <Link
               style={{ textDecoration: "none" }}
               to={`/dashboard/payfee/${_id}`}
             >
               <Button color="inherit">Pay Fee</Button>
-            </Link>
-            <br />
-            <NavLink style={{ textDecoration: "none" }} to="donate">
+            </Link> */}
+
+            {/*  <NavLink style={{ textDecoration: "none" }} to="donate">
               {" "}
               <Button color="inherit">Donate</Button>
-            </NavLink>
-            <br />
-            <br />
-            <Button onClick={logout} color="inherit">
+            </NavLink> */}
+
+            {/* <Button onClick={logout} color="inherit">
               Logout
-            </Button>{" "}
+            </Button>{" "} */}
             <br />
           </Box>
         )}
       </Box>
-      {admin && (
+      {admin || (
         <Box sx={{ textAlign: "left" }}>
           <Link style={{ textDecoration: "none" }} to="makeAdmin">
             {" "}
@@ -93,33 +96,33 @@ function Dashboard(props) {
           <br />
           <Link
             style={{ textDecoration: "none" }}
-            to={`/dashboard/showapplies`}
+            to={`/dashboard/showEnrolls`}
           >
             {" "}
-            <Button color="inherit">All Application</Button>
+            <Button color="inherit">All Enroll</Button>
           </Link>
           <br />
           <Link
             style={{ textDecoration: "none" }}
-            to={`/dashboard/managemember`}
+            to={`/dashboard/managecourse`}
           >
             {" "}
-            <Button color="inherit">Manage Member</Button>
+            <Button color="inherit">Manage Course</Button>
           </Link>
           <br />
           {/* <Link style={{ textDecoration: 'none' }} to={`/dashboard/manageproduct`}> <Button color="inherit">Manage Products</Button></Link><br /> */}
-          <Link style={{ textDecoration: "none" }} to={`/dashboard/addmember`}>
+          <Link style={{ textDecoration: "none" }} to={`/dashboard/addTeacher`}>
             {" "}
-            <Button color="inherit">Add Member</Button>
+            <Button color="inherit">Add Teacher</Button>
           </Link>{" "}
           <br />
-          <Link
+          {/*  <Link
             style={{ textDecoration: "none" }}
             to={`/dashboard/paidmembers`}
           >
             {" "}
             <Button color="inherit">Paid Members</Button>
-          </Link>{" "}
+          </Link>{" "} */}
           <br />
           <Button onClick={logout} sx={{ color: "white" }}>
             Logout
@@ -219,28 +222,24 @@ function Dashboard(props) {
       >
         <Toolbar />
 
-        {/*  <Routes>
+        <Routes>
+          <Route path="givereview" element={<Review />}></Route>
+          <Route path="addTeacher" element={<AddTeacher />}></Route>
+          <Route path="givereview" element={<Review />}></Route>
+          {/* <Route path="payfee/:payId" element={<PayFee />} /> */}
+          {/* <Route path="donate" element={<Donate />} /> */}
 
-                    <Route path="givereview" element={<GiveReview />}>
+          <Route path="myEnroll" element={<MyEnroll />} />
+          {/* <Route path="showapplies" element={<ManageApplies />} /> */}
 
-                    </Route>
-                    <Route path="payfee/:payId" element={<PayFee />} />
-                    <Route path="donate" element={<Donate />} />
+          {/* <Route path="addmember" element={<AdminRoute><Addmember /></AdminRoute>} /> */}
+          <Route path="makeAdmin" element={<AddAdmin />} />
 
-
-                    <Route path="myapply" element={<MyApply />} />
-                    <Route path="showapplies" element={<ManageApplies />} />
-
-                    <Route path="addmember" element={<AdminRoute><Addmember /></AdminRoute>} />
-                    <Route path="makeAdmin" element={<AdminRoute><MakeAdmin /></AdminRoute>} />
-
-                    <Route path="managemember" element={<AdminRoute><Managemember /></AdminRoute>} />
+          {/*  <Route path="managemember" element={<AdminRoute><Managemember /></AdminRoute>} />
 
                     <Route path="paidmembers" element={<PaidMembers />} />
-                    <Route path="/" element={<Show />} />
-
-                </Routes>
- */}
+                    <Route path="/" element={<Show />} /> */}
+        </Routes>
       </Box>
     </Box>
   );

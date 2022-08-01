@@ -1,0 +1,24 @@
+.myapp {
+    background-color: rgba(255, 255, 255, 0.518);
+}
+
+.enr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-image: linear-gradient(rgba(231, 239, 231, 0.54), cyan);
+
+}
+
+.enrtitle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: rgb(7, 1, 1);
+    /* font-size: 30px; */
+}
+
+
+
+
+.enroll:hover {
+    transform: translate3d(1px, 10%, 1em)
+}

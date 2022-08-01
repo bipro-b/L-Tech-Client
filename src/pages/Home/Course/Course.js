@@ -5,7 +5,7 @@ import Rating from "react-rating";
 import "./Course.css";
 
 const Course = (props) => {
-  const { name, img, price, id, star } = props.course;
+  const { name, img, price, _id, star } = props.course;
   return (
     <Container className="course-container">
       <div
@@ -38,7 +38,7 @@ const Course = (props) => {
             readonly
           />
           <br />
-          <Link to={`/${id}`}>
+          <Link to={`/${_id}`}>
             <Button className="btn-back ">Enroll Now</Button>{" "}
           </Link>
         </div>
