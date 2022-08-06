@@ -12,11 +12,11 @@ const MyEnroll = () => {
       .then((data) => setOrders(data));
   }, [user.email]);
 
-  // delete car
+  // delete enrollment
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you want to delete?");
     if (proceed) {
-      const url = `https://intense-wildwood-59281.herokuapp.com/applies/${id}`;
+      const url = `http://localhost:5000/enroll/${id}`;
       fetch(url, {
         method: "DELETE",
       })
@@ -54,7 +54,7 @@ const MyEnroll = () => {
               <div></div>
               <div>
                 <Button onClick={() => handleDelete(order._id)} variant="text">
-                  Delete
+                  Cancel
                 </Button>
               </div>
             </div>

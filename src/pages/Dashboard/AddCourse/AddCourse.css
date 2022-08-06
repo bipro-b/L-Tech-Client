@@ -1,0 +1,14 @@
+.add-car form {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.add-car form input,
+textarea {
+    width: 75%;
+    margin-bottom: 10px;
+    /* background-image: linear-gradient(rgba(0, 102, 255, 0.54), rgba(176, 176, 119, 0.567)); */
+}

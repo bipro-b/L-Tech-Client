@@ -1,0 +1,22 @@
+.edit {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: rgb(13, 11, 11);
+    background-image: linear-gradient(rgba(231, 239, 231, 0.54), cyan);
+
+
+    /* flex-direction: row; */
+
+    /* justify-content: center; */
+    /* flex-flow: row wrap; */
+
+
+}
+
+.edit:hover {
+    transform: translate3d(1px, 10%, 1em)
+}
+
+.mem {
+    background-color: rgba(0, 0, 0, 0.49);
+}

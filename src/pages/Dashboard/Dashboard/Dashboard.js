@@ -24,6 +24,10 @@ import MyEnroll from "../MyEnroll/MyEnroll";
 import Review from "../Review/Review";
 import AddTeacher from "../AddTeacher/AddTeacher";
 import AddAdmin from "../AddAdmin/AddAdmin";
+import AllEnroll from "../All Enroll/AllEnroll";
+import AddCourse from "../AddCourse/AddCourse";
+import ManageCourse from "../ManageCourse/ManageCourse";
+import Show from "../Show/Show";
 
 const drawerWidth = 200;
 
@@ -94,10 +98,7 @@ function Dashboard(props) {
             <Button color="inherit">Make Admin</Button>
           </Link>
           <br />
-          <Link
-            style={{ textDecoration: "none" }}
-            to={`/dashboard/showEnrolls`}
-          >
+          <Link style={{ textDecoration: "none" }} to={`/dashboard/allenroll`}>
             {" "}
             <Button color="inherit">All Enroll</Button>
           </Link>
@@ -108,6 +109,11 @@ function Dashboard(props) {
           >
             {" "}
             <Button color="inherit">Manage Course</Button>
+          </Link>
+          <br />
+          <Link style={{ textDecoration: "none" }} to={`/dashboard/addcourse`}>
+            {" "}
+            <Button color="inherit">Add Course</Button>
           </Link>
           <br />
           {/* <Link style={{ textDecoration: 'none' }} to={`/dashboard/manageproduct`}> <Button color="inherit">Manage Products</Button></Link><br /> */}
@@ -228,17 +234,18 @@ function Dashboard(props) {
           <Route path="givereview" element={<Review />}></Route>
           {/* <Route path="payfee/:payId" element={<PayFee />} /> */}
           {/* <Route path="donate" element={<Donate />} /> */}
-
           <Route path="myEnroll" element={<MyEnroll />} />
           {/* <Route path="showapplies" element={<ManageApplies />} /> */}
-
           {/* <Route path="addmember" element={<AdminRoute><Addmember /></AdminRoute>} /> */}
           <Route path="makeAdmin" element={<AddAdmin />} />
-
+          <Route path="allenroll" element={<AllEnroll />} />
+          <Route path="addcourse" element={<AddCourse />} />
+          <Route path="managecourse" element={<ManageCourse />} />
+          <Route path="/" element={<Show />} />
           {/*  <Route path="managemember" element={<AdminRoute><Managemember /></AdminRoute>} />
 
                     <Route path="paidmembers" element={<PaidMembers />} />
-                    <Route path="/" element={<Show />} /> */}
+                    */}
         </Routes>
       </Box>
     </Box>

@@ -9,7 +9,7 @@ import Banner from "../Banner/Banner";
 import Courses from "../Courses/Courses";
 import Faq from "../Faq/Faq";
 import Like from "../Like/Like";
-// import Review from "../Review/Review";
+import Review from "../Review/Review";
 
 const Home = () => {
   return (
@@ -20,7 +20,7 @@ const Home = () => {
         <Adv />
         <Courses />
         <Faq />
-        {/* <Review /> */}
+        <Review />
         <Like />
       </Container>
 

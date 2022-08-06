@@ -1,52 +1,45 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/swiper.min.css";
-// import "swiper/components/effect-coverflow/effect-coverflow.min.css";
-// import "swiper/components/pagination/pagination.min.css";
+import { Grid, Typography } from "@mui/material";
+import { Box } from "@mui/system";
+import React, { useEffect, useState } from "react";
+import { Container } from "react-bootstrap";
+import SingleReview from "./SingleReview";
 
 import "./Review.css";
-
-import { data } from "./data";
-
-import SwiperCore, { EffectCoverflow, Pagination } from "swiper/core";
-
-SwiperCore.use([EffectCoverflow, Pagination]);
-
 const Review = () => {
+  const [reviews, setReviews] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:5000/review")
+      .then((res) => res.json())
+      .then((data) => setReviews(data));
+  }, []);
+  // console.log(reviews);
   return (
-    <section id="testimonials" className="main-testimonials-wrapper">
-      <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 6,
-          slideShadows: true,
-        }}
-        // pagination={true}
-      >
-        {data.map((item, key) => (
-          <SwiperSlide>
-            <img src={item.image} alt={item.name} />
-            <h3>{item.name}</h3>
-            <p>{item.testimony}</p>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+    <Container>
+      <Box sx={{ flexGrow: 1 }} className="review mb-5 pb-5">
+        <Typography
+          sx={{ fontWeight: 500, color: "white", my: 5 }}
+          variant="h6"
+          component="div"
+        >
+          Our Student's Review
+        </Typography>
 
-      <div className="quote-parent">
-        <div className="quote n-box1 flex-with-center">
-          <h1>Quote?!</h1>
-          <div className="quote-content">
-            <p>“ Knowledge is power.” </p>
-          </div>
-        </div>
-      </div>
-    </section>
+        <Grid
+          container
+          spacing={{ xs: 2, md: 3 }}
+          columns={{ xs: 4, sm: 8, md: 12 }}
+        >
+          {reviews.map((review, index) => {
+            if (index >= 9) return null;
+            return (
+              <SingleReview key={review._id} review={review}>
+                {" "}
+              </SingleReview>
+            );
+          })}
+        </Grid>
+      </Box>
+    </Container>
   );
 };
 
