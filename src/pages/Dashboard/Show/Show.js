@@ -1,5 +1,5 @@
 import React from "react";
-import welcome from "../../../images/welcome.gif";
+import welcome from "../../../images/welcome2.gif";
 const Show = () => {
   return (
     <div>

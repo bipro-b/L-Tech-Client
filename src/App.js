@@ -10,6 +10,7 @@ import Enroll from "./pages/Home/Enroll/Enroll";
 import Home from "./pages/Home/Home/Home";
 import Login from "./pages/Logging/Login/Login";
 import PrivateRoute from "./pages/Logging/PrivateRoute/PrivateRoute";
+import Profile from "./pages/Logging/Profile/Profile";
 import Register from "./pages/Logging/Register/Register";
 import NotFound from "./pages/Notfound/Notfound";
 
@@ -34,6 +35,7 @@ function App() {
             <Route path="/dashboard/*" element={<Dashboard />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/profile" element={<Profile />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>
