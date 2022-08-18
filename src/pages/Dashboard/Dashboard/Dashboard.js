@@ -28,6 +28,7 @@ import AllEnroll from "../All Enroll/AllEnroll";
 import AddCourse from "../AddCourse/AddCourse";
 import ManageCourse from "../ManageCourse/ManageCourse";
 import Show from "../Show/Show";
+import AssignCourse from "../AssignCourse/AssignCourse";
 
 const drawerWidth = 200;
 
@@ -91,7 +92,7 @@ function Dashboard(props) {
           </Box>
         )}
       </Box>
-      {admin || (
+      {admin && (
         <Box sx={{ textAlign: "left" }}>
           <Link style={{ textDecoration: "none" }} to="makeAdmin">
             {" "}
@@ -235,6 +236,7 @@ function Dashboard(props) {
           {/* <Route path="payfee/:payId" element={<PayFee />} /> */}
           {/* <Route path="donate" element={<Donate />} /> */}
           <Route path="myEnroll" element={<MyEnroll />} />
+          <Route path="assigncourse" element={<AssignCourse />} />
           {/* <Route path="showapplies" element={<ManageApplies />} /> */}
           {/* <Route path="addmember" element={<AdminRoute><Addmember /></AdminRoute>} /> */}
           <Route path="makeAdmin" element={<AddAdmin />} />

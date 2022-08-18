@@ -1,16 +1,14 @@
 import React from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import useAuth from "../../../hooks/useAuth";
 import ltech from "../../../images/ltech.png";
-import "./NavBar.css";
-const NavBar = () => {
-  console.log();
+import "./InstractorHeader.css";
+const InstructorHeader = () => {
   const activeStyle = {
     fontWeight: "bold",
     color: "rgba(0, 0, 0, 0.312)",
   };
-  const { user, logout } = useAuth();
+
   return (
     <div className="header ">
       <Navbar
@@ -27,6 +25,9 @@ const NavBar = () => {
             </span>
             -Tech
           </Navbar.Brand>
+          <div style={{ color: "white", fontSize: "23px" }}>
+            Intructors Pannel
+          </div>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -37,37 +38,13 @@ const NavBar = () => {
               <NavLink to="/" activeStyle={activeStyle}>
                 Home
               </NavLink>
-              <NavLink to="/about" activeStyle={activeStyle}>
-                About
+              <NavLink to="/teacher" activeStyle={activeStyle}>
+                Teachers
               </NavLink>
               <NavLink to="/contact" activeStyle={activeStyle}>
                 Contact
               </NavLink>
             </Nav>
-            {user.email !== "teacher@gmail.com" && (
-              <NavLink to="/dashboard" activeStyle={activeStyle}>
-                Dashbaord
-              </NavLink>
-            )}
-            {user.email === "teacher@gmail.com" && (
-              <NavLink to="/instructor" activeStyle={activeStyle}>
-                Instructors Pannel
-              </NavLink>
-            )}
-
-            {/* {user.email && (
-              <span style={{ color: "white" }}> {user.displayName} </span>
-            )} */}
-            {user.email ? (
-              <button
-                style={{ backgroundColor: "#212529", color: "white" }}
-                onClick={logout}
-              >
-                log Out
-              </button>
-            ) : (
-              <NavLink to="/login">Login</NavLink>
-            )}
           </Navbar.Collapse>
         </Container>
       </Navbar>
@@ -75,4 +52,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default InstructorHeader;

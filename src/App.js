@@ -8,6 +8,8 @@ import Contact from "./pages/Contact/Contact";
 import Dashboard from "./pages/Dashboard/Dashboard/Dashboard";
 import Enroll from "./pages/Home/Enroll/Enroll";
 import Home from "./pages/Home/Home/Home";
+import Instructor from "./pages/Instructors/Instructor/Instructor";
+import Teacher from "./pages/Instructors/Teacher/Teacher";
 import Login from "./pages/Logging/Login/Login";
 import PrivateRoute from "./pages/Logging/PrivateRoute/PrivateRoute";
 import Profile from "./pages/Logging/Profile/Profile";
@@ -32,6 +34,8 @@ function App() {
             />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/instructor" element={<Instructor />} />
+            <Route path="/teacher" element={<Teacher />} />
             <Route path="/dashboard/*" element={<Dashboard />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
