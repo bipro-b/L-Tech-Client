@@ -17,7 +17,11 @@ const Assigned = () => {
             <Container className=" ">
               <div className="photo-frame">
                 <div className="photo">
-                  <img src={ab.img} style={{ height: "250px" }} alt="" />
+                  <img
+                    src={ab.img}
+                    style={{ height: "250px", width: "140px" }}
+                    alt=""
+                  />
                 </div>
                 <div className=" photo-detail">
                   <h2 id="program">Course: {ab.name} </h2>

@@ -1,6 +1,7 @@
 import axios from "axios";
 import React from "react";
 import { useForm } from "react-hook-form";
+import UpcomingCourse from "../UpcomingCourse/UpcomingCourse";
 
 import "./AddCourse.css";
 
@@ -40,6 +41,9 @@ const AddCourse = () => {
           <input style={{ backgroundColor: "goldenrod" }} type="submit" />
         </form>
       </div>
+      <hr />
+      <br />
+      <UpcomingCourse />
     </>
   );
 };

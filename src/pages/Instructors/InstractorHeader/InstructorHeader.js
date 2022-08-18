@@ -44,6 +44,9 @@ const InstructorHeader = () => {
               <NavLink to="/contact" activeStyle={activeStyle}>
                 Contact
               </NavLink>
+              <NavLink to="/dashboard" activeStyle={activeStyle}>
+                Dashbaord
+              </NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>

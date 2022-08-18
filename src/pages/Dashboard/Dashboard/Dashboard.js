@@ -29,6 +29,8 @@ import AddCourse from "../AddCourse/AddCourse";
 import ManageCourse from "../ManageCourse/ManageCourse";
 import Show from "../Show/Show";
 import AssignCourse from "../AssignCourse/AssignCourse";
+import UpcomingCourse from "../UpcomingCourse/UpcomingCourse";
+import Instructor from "../../Instructors/Instructor/Instructor";
 
 const drawerWidth = 200;
 
@@ -179,6 +181,16 @@ function Dashboard(props) {
               <Button color="inherit">Home</Button>
             </NavLink>
           </Typography>
+          {admin && (
+            <Typography variant="h6" noWrap component="div">
+              <NavLink
+                style={{ textDecoration: "none", color: "white" }}
+                to="/instructor"
+              >
+                <Button color="inherit">Instrutors</Button>
+              </NavLink>
+            </Typography>
+          )}
         </Toolbar>
       </AppBar>
       <Box
@@ -242,6 +254,7 @@ function Dashboard(props) {
           <Route path="makeAdmin" element={<AddAdmin />} />
           <Route path="allenroll" element={<AllEnroll />} />
           <Route path="addcourse" element={<AddCourse />} />
+          <Route path="assignedcourse" element={<UpcomingCourse />} />
           <Route path="managecourse" element={<ManageCourse />} />
           <Route path="/" element={<Show />} />
           {/*  <Route path="managemember" element={<AdminRoute><Managemember /></AdminRoute>} />

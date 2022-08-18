@@ -1,0 +1,14 @@
+.details{
+    
+    border-radius: 3%;
+    /* width: 150px; */
+    
+}
+.image{
+    box-shadow: 3px 2px 5px;
+    
+}
+.textual{
+    text-align: left;
+    word-wrap: break-word;
+}

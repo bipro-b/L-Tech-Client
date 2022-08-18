@@ -44,14 +44,9 @@ const NavBar = () => {
                 Contact
               </NavLink>
             </Nav>
-            {user.email !== "teacher@gmail.com" && (
+            {user.email && (
               <NavLink to="/dashboard" activeStyle={activeStyle}>
                 Dashbaord
-              </NavLink>
-            )}
-            {user.email === "teacher@gmail.com" && (
-              <NavLink to="/instructor" activeStyle={activeStyle}>
-                Instructors Pannel
               </NavLink>
             )}
 
