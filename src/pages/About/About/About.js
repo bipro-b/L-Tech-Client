@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div>
             <NavBar/>
-            <h2>About sections</h2>
+            <h2>About sections Where teacher and others workers details will be added</h2>
             <Footer/>
         </div>
     );
