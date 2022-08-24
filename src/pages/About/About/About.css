@@ -1,0 +1,32 @@
+
+#clients-say{
+    font-family: 'Poppins', sans-serif;
+    color: #6C6C6C;
+    ;
+}
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+
+.font-color{
+    margin-right: 3px;
+    color:rgb(123, 255, 0);
+}
+#name{
+    margin-top: 15px;
+    margin-left: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #23A6F0;
+
+}
+#occupation{
+    margin-top: 15px;
+    margin-left: 29px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #252B42;
+
+}

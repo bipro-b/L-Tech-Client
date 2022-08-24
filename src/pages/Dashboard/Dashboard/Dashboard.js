@@ -53,9 +53,14 @@ function Dashboard(props) {
   const { _id } = members;
   const drawer = (
     <div className="door">
-      <Toolbar />
+      {/* <Toolbar /> */}
       <Divider />
-      <Link style={{ textDecoration: "none" }} to="/dashboard">
+      <Link
+        style={{
+          textDecoration: "none",
+        }}
+        to="/dashboard"
+      >
         {" "}
         <Button color="inherit">Dashboard</Button>
       </Link>{" "}
@@ -81,15 +86,14 @@ function Dashboard(props) {
             >
               <Button color="inherit">Pay Fee</Button>
             </Link> */}
-
             {/*  <NavLink style={{ textDecoration: "none" }} to="donate">
               {" "}
               <Button color="inherit">Donate</Button>
             </NavLink> */}
-
-            {/* <Button onClick={logout} color="inherit">
+            <br />
+            <Button onClick={logout} color="inherit">
               Logout
-            </Button>{" "} */}
+            </Button>{" "}
             <br />
           </Box>
         )}

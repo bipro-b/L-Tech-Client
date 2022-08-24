@@ -1,0 +1,92 @@
+[
+    {
+        "id": "1000",
+        "name": "Bruice Moris",
+        "position": "Web Developer",
+        "age": "25",
+        "Location": "Dhanmondi",
+        "salary": "56000",
+        "pic": "https://randomuser.me/api/portraits/thumb/women/31.jpg"
+    },
+    {
+        "id": "1001",
+        "name": "Lambard Cruish",
+        "position": "Web Developer",
+        "age": "24",
+        "Location": "Dhanmondi",
+        "salary": "68000",
+        "pic": "https://randomuser.me/api/portraits/thumb/men/85.jpg"
+    },
+    {
+        "id": "1002",
+        "name": "Nancy Rense",
+        "position": "Android Developer",
+        "age": "28",
+        "Location": "gulshan",
+        "salary": "90000",
+        "pic": "https://randomuser.me/api/portraits/thumb/women/70.jpg"
+    },
+    {
+        "id": "1003",
+        "name": "Quicy Nancy",
+        "position": "Java Developer",
+        "age": "25",
+        "Location": "Dhanmondi",
+        "salary": "89000",
+        "pic": "https://randomuser.me/api/portraits/thumb/men/38.jpg"
+    },
+    {
+        "id": "1004",
+        "name": "Juice al",
+        "position": "Web Developer",
+        "age": "29",
+        "Location": "Savar",
+        "salary": "45500",
+        "pic": "https://randomuser.me/api/portraits/thumb/men/71.jpg"
+    },
+    {
+        "id": "1005",
+        "name": "Bruice al",
+        "position": "MERN Developer",
+        "age": "25",
+        "Location": "Dhanmondi",
+        "salary": "56000",
+        "pic": "https://randomuser.me/api/portraits/thumb/men/85.jpg"
+    },
+    {
+        "id": "1006",
+        "name": "Dewis al",
+        "position": "React Developer",
+        "age": "25",
+        "Location": "Borishal",
+        "salary": "56000",
+        "pic": "https://randomuser.me/api/portraits/thumb/women/75.jpg"
+    },
+    {
+        "id": "1007",
+        "name": "Quice al",
+        "position": "Web Developer",
+        "age": "25",
+        "Location": "Dhanmondi",
+        "salary": "90000",
+        "pic": "https://randomuser.me/api/portraits/thumb/women/71.jpg"
+    },
+    {
+        "id": "1008",
+        "name": "Pristol al",
+        "position": "Data Analyst",
+        "age": "25",
+        "Location": "Gulsithan",
+        "salary": "56000",
+        "pic": "https://randomuser.me/api/portraits/thumb/men/9.jpg"
+    },
+    {
+        "id": "1009",
+        "name": "Cordela Garji",
+        "position": "Software Developer",
+        "age": "22",
+        "Location": "Gopalgonj",
+        "salary": "96000",
+        "pic": "https://randomuser.me/api/portraits/women/32.jpg"
+    }
+]

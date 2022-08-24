@@ -1,8 +1,8 @@
 // import { Carousel } from 'bootstrap';
 import React from "react";
-import banner1 from "../../../images/banner1.jpg";
+import banner1 from "../../../images/user-1.png";
 import banner2 from "../../../images/banner2.jpg";
-import banner3 from "../../../images/banner3.jpg";
+import banner3 from "../../../images/user-2.png";
 import { Button, Carousel, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Banner.css";
@@ -72,7 +72,7 @@ const Banner = () => {
                 cupiditate provident delectus, quasi dicta officia saepe optio
                 blanditiis quam!
               </h1>
-              <Link to="/home">
+              <Link to="/about">
                 <Button variant="flat" size="xxl">
                   Learn More
                 </Button>
@@ -103,7 +103,7 @@ const Banner = () => {
                 cupiditate provident delectus, quasi dicta officia saepe optio
                 blanditiis quam!
               </h1>
-              <Link to="/home">
+              <Link to="/about">
                 <Button variant="flat" size="xxl">
                   Learn More
                 </Button>

@@ -17,8 +17,10 @@ const Review = () => {
   return (
     <>
       <div className="add-car">
-        <h3 style={{ color: "white" }}>Give a Review About our L-tech </h3>
+        {/* <h3 style={{ color: "red" }}>Give a Review About our L-tech </h3> */}
         <form onSubmit={handleSubmit(onSubmit)}>
+          <h3 style={{ color: "white" }}>Give a Review About our L-tech </h3>
+
           <input
             {...register("name", { required: true, maxLength: 20 })}
             placeholder="Your Name"
