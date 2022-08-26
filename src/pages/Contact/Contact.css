@@ -8,7 +8,8 @@
 
 .contact{
     /* background-color: #17395A; */
-    background-color: rgba(0, 0, 255, 0.358);
+    /* background-color: rgba(0, 0, 255, 0.358); */
+    background-color: #120E43;
     width: 75%;
     padding-bottom: 20px;
     border-radius: 7px;
@@ -21,3 +22,21 @@ input {
     height: 10em;
     width: 600px;
   }
+  .address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .addr{
+    background-color:#120E43 ;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #22CB5C;
+    text-align: left;
+  
+  }
+  .addr p{
+  }
+  

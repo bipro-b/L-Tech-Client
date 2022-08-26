@@ -2,6 +2,8 @@ import { Button } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import useAuth from "../../../hooks/useAuth";
 
+import StripeCheckout from "react-stripe-checkout";
+
 import "./MyEnroll.css";
 const MyEnroll = () => {
   const { user } = useAuth();
@@ -11,6 +13,38 @@ const MyEnroll = () => {
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, [user.email]);
+
+  // payment
+  // const [product, setProduct] = useState({
+  //   name: " React from Bipro",
+  //   price: 10,
+  //   productBy: "Bipro",
+  // });
+  const [product, setProduct] = useState({
+    name: " React from Bipro",
+    price: 10,
+    productBy: "Bipro",
+  });
+  const makePayment = (token) => {
+    const body = {
+      token,
+      product,
+    };
+    const headers = {
+      "Content-Type": "application/json",
+    };
+    return fetch(`http://localhost:7000/payment`, {
+      method: "POST",
+      headers,
+      body: JSON.stringify(body),
+    })
+      .then((response) => {
+        console.log("RESPONSE", response);
+        const { status } = response;
+        console.log("STATUS", status);
+      })
+      .catch((error) => console.log(error));
+  };
 
   // delete enrollment
   const handleDelete = (id) => {
@@ -37,7 +71,7 @@ const MyEnroll = () => {
         <h3 style={{ color: "black" }}>My Courses</h3>
         <div className="enrtitle">
           <div>CourseName</div>
-          <div></div>
+          <div>Pay Now</div>
           <div>Cancelaion</div>
         </div>
         {orders.map((order) => (
@@ -51,7 +85,16 @@ const MyEnroll = () => {
                 />{" "} */}
                 {order.name}
               </div>
-              <div></div>
+              <div>
+                <StripeCheckout
+                  stripeKey="pk_test_51JvzyGFPY5JuFclZn4nZQlalN6TcHrEmbA8QBtfzNX3iNawhYT9u7VJKxDLi2B9fEvaSFJJbqCBZTyd6vTsuOUUs00tovvPmVL" // token={makePayment}
+                  token={makePayment}
+                  name="PAY FOR L_TECH"
+                  amount={order.price * 100}
+                >
+                  <Button variant="contained">Pay with {order.price} $</Button>
+                </StripeCheckout>
+              </div>
               <div>
                 <Button onClick={() => handleDelete(order._id)} variant="text">
                   Cancel

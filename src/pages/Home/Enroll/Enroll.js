@@ -89,7 +89,7 @@ const Enroll = () => {
               />
               <input
                 defaultValue={bookDetails?.price}
-                {...register("description", { required: true })}
+                {...register("price", { required: true })}
               />
               <input
                 defaultValue={user?.displayName}

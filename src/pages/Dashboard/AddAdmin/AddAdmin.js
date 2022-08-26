@@ -31,7 +31,16 @@ const AddAdmin = () => {
   };
   return (
     <div>
-      <h3>Add Admin</h3>
+      <h3
+        style={{
+          color: "#CAD5E2",
+          backgroundColor: "#207398",
+          padding: "20px",
+          borderRadius: "0 50px 0 50px",
+        }}
+      >
+        Add Admin
+      </h3>
       <form onSubmit={handleAdminSubmit}>
         <TextField
           id="standard-basic"

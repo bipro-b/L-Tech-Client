@@ -33,7 +33,16 @@ const ManageCourse = () => {
   return (
     <>
       <div className="mem">
-        <h3 style={{ color: "white" }}>Manage all Courses</h3>
+        <h3
+          style={{
+            color: "white",
+            backgroundColor: "#207398",
+            padding: "10px",
+            borderRadius: "5px",
+          }}
+        >
+          Manage all Courses
+        </h3>
         <div className="title">
           <div>Course</div>
           <div>Course Code</div>

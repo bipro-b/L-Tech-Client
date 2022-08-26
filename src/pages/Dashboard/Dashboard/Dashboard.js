@@ -122,13 +122,12 @@ function Dashboard(props) {
             {" "}
             <Button color="inherit">Add Course</Button>
           </Link>
-          <br />
+
           {/* <Link style={{ textDecoration: 'none' }} to={`/dashboard/manageproduct`}> <Button color="inherit">Manage Products</Button></Link><br /> */}
-          <Link style={{ textDecoration: "none" }} to={`/dashboard/addTeacher`}>
+          {/*  <Link style={{ textDecoration: "none" }} to={`/dashboard/addTeacher`}>
             {" "}
             <Button color="inherit">Add Teacher</Button>
-          </Link>{" "}
-          <br />
+          </Link>{" "} */}
           {/*  <Link
             style={{ textDecoration: "none" }}
             to={`/dashboard/paidmembers`}
@@ -137,7 +136,7 @@ function Dashboard(props) {
             <Button color="inherit">Paid Members</Button>
           </Link>{" "} */}
           <br />
-          <Button onClick={logout} sx={{ color: "white" }}>
+          <Button onClick={logout} sx={{ color: "inherit" }}>
             Logout
           </Button>
         </Box>
@@ -154,7 +153,8 @@ function Dashboard(props) {
       <AppBar
         position="fixed"
         sx={{
-          backgroundColor: "rgba(0, 0, 0, 0.812)",
+          // backgroundColor: "rgba(0, 0, 0, 0.812)",
+          backgroundColor: "#120E43",
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },
         }}

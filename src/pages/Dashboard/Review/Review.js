@@ -16,11 +16,19 @@ const Review = () => {
   };
   return (
     <>
+      <h3
+        style={{
+          color: "#CAD5E2",
+          backgroundColor: "#207398",
+          padding: "20px",
+          borderRadius: "0 50px 0 50px",
+        }}
+      >
+        Give a Review About our L-tech{" "}
+      </h3>
       <div className="add-car">
         {/* <h3 style={{ color: "red" }}>Give a Review About our L-tech </h3> */}
         <form onSubmit={handleSubmit(onSubmit)}>
-          <h3 style={{ color: "white" }}>Give a Review About our L-tech </h3>
-
           <input
             {...register("name", { required: true, maxLength: 20 })}
             placeholder="Your Name"

@@ -19,7 +19,16 @@ const AddCourse = () => {
   return (
     <>
       <div className="add-car">
-        <h3 style={{ color: "white" }}>Add new Course</h3>
+        <h3
+          style={{
+            color: "#CAD5E2",
+            backgroundColor: "#207398",
+            padding: "20px",
+            borderRadius: "0 50px 0 50px",
+          }}
+        >
+          Add new Course
+        </h3>
         <form onSubmit={handleSubmit(onSubmit)}>
           <input
             {...register("name", { required: true, maxLength: 20 })}

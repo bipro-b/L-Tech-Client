@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-import useAuth from "../../../hooks/useAuth";
 import "./AllEnroll.css";
 const AllEnroll = () => {
-  const { user } = useAuth();
   const [applies, setApplies] = useState([]);
   useEffect(() => {
     fetch("http://localhost:5000/enroll")
@@ -13,7 +11,16 @@ const AllEnroll = () => {
   return (
     <>
       <div className="apply">
-        <h3 style={{ color: "white" }}>All Enrollment</h3>
+        <h3
+          style={{
+            color: "white",
+            backgroundColor: "#207398",
+            padding: "10px",
+            borderRadius: "5px",
+          }}
+        >
+          All Enrollment
+        </h3>
         <div className="title">
           <div>Name</div>
           <div>Enrolled Course</div>

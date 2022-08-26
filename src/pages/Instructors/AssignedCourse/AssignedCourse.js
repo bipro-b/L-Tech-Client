@@ -17,8 +17,17 @@ const AssignedCourse = () => {
   };
   return (
     <>
-      <div className="add-car mb-5">
-        <h3 style={{ color: "white" }}>Assign a new Course</h3>
+      <div className="add-car mt-2 mb-5">
+        <h3
+          style={{
+            color: "#CAD5E2",
+            backgroundColor: "#207398",
+            padding: "20px",
+            borderRadius: "0 50px 0 50px",
+          }}
+        >
+          Assign a new Course
+        </h3>
         <form onSubmit={handleSubmit(onSubmit)}>
           <input
             {...register("name", { required: true, maxLength: 20 })}

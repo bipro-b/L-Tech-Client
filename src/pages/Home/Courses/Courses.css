@@ -1,6 +1,7 @@
 .headline{
     padding: 10px;
-    background-color: goldenrod;
+    /* background-color: goldenrod; */
+    background-color: #120E43;
     color: white;
     border-radius: 3px;
     box-shadow: 10px 20px 10px ;
@@ -21,3 +22,5 @@
   margin-top: 0px;
 
 }
+
+

@@ -8,7 +8,16 @@ const Instructor = () => {
     <div>
       <InstructorHeader />
       <AssignedCourse />
-      <h3>Assigned Courses</h3>
+      <h3
+        style={{
+          color: "#CAD5E2",
+          backgroundColor: "#207398",
+          padding: "20px",
+          borderRadius: "0 50px 0 50px",
+        }}
+      >
+        Assigned Courses
+      </h3>
       <Assigned />
       <Footer />
     </div>
