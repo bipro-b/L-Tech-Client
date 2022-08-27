@@ -46,7 +46,7 @@ function Dashboard(props) {
 
   const [members, setMembers] = React.useState([]);
   React.useEffect(() => {
-    fetch("https://warm-meadow-41881.herokuapp.com/users")
+    fetch("https://ltech-server.herokuapp.com/users")
       .then((res) => res.json())
       .then((data) => setMembers(data));
   }, []);
@@ -68,7 +68,7 @@ function Dashboard(props) {
       <Box sx={{ textAlign: "left" }}>
         {/* <Link style={{ textDecoration: 'none' }} to="/home"> <Button color="inherit">Products</Button></Link> <br /> */}
 
-        {admin || (
+        {!admin && (
           <Box>
             <Link style={{ textDecoration: "none" }} to={`/dashboard/myEnroll`}>
               {" "}

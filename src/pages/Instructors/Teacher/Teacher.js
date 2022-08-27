@@ -1,6 +1,7 @@
 import { Container } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import InstructorHeader from "../InstractorHeader/InstructorHeader";
+import Footer from "../../Shared/Footer/Footer";
 import "./Teacher.css";
 const Teacher = () => {
   const [teachers, setTeacher] = useState([]);
@@ -13,7 +14,16 @@ const Teacher = () => {
     <div>
       <InstructorHeader />
       <Container>
-        <h3 style={{ color: "black" }}>Our Instructors</h3>
+        <h3
+          style={{
+            color: "#CAD5E2",
+            backgroundColor: "#207398",
+            padding: "10px",
+            borderRadius: "0 0 5px 5px",
+          }}
+        >
+          Our Instructors
+        </h3>
         <div className="title">
           <div>Image</div>
           <div>Name</div>
@@ -37,6 +47,7 @@ const Teacher = () => {
           </div>
         ))}
       </Container>
+      <Footer />
     </div>
   );
 };

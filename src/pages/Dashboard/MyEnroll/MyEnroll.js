@@ -9,7 +9,7 @@ const MyEnroll = () => {
   const { user } = useAuth();
   const [orders, setOrders] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/enroll?email=${user.email}`)
+    fetch(`https://ltech-server.herokuapp.com/enroll?email=${user.email}`)
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, [user.email]);
@@ -50,7 +50,7 @@ const MyEnroll = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you want to delete?");
     if (proceed) {
-      const url = `http://localhost:5000/enroll/${id}`;
+      const url = `https://ltech-server.herokuapp.com/enroll/${id}`;
       fetch(url, {
         method: "DELETE",
       })

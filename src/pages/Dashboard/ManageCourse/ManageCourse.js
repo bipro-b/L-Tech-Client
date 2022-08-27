@@ -5,7 +5,7 @@ const ManageCourse = () => {
   const [cars, setCars] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/courses")
+    fetch("https://ltech-server.herokuapp.com/courses")
       .then((res) => res.json())
       .then((data) => setCars(data));
   }, []);
@@ -14,7 +14,7 @@ const ManageCourse = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you want to delete?");
     if (proceed) {
-      const url = `http://localhost:5000/courses/${id}`;
+      const url = `https://ltech-server.herokuapp.com/courses/${id}`;
       fetch(url, {
         method: "DELETE",
       })

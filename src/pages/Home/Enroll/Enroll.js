@@ -19,7 +19,7 @@ const Enroll = () => {
   const [bookDetails, setBookDetails] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/courses")
+    fetch("https://ltech-server.herokuapp.com/courses")
       .then((res) => res.json())
       .then((data) => setDetails(data));
   }, []);
@@ -30,12 +30,14 @@ const Enroll = () => {
   }, [details, bookId]);
 
   const onSubmit = (data) => {
-    axios.post("http://localhost:5000/enroll", data).then((res) => {
-      if (res.data.insertedId) {
-        alert("Submit successfully");
-        reset();
-      }
-    });
+    axios
+      .post("https://ltech-server.herokuapp.com/enroll", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("Submit successfully");
+          reset();
+        }
+      });
   };
   return (
     <>
@@ -60,6 +62,16 @@ const Enroll = () => {
               className="course-details"
               sx={{ alignItems: "center", marginBottom: "20px" }}
             >
+              <h3
+                style={{
+                  color: "#CAD5E2",
+                  backgroundColor: "#207398",
+                  padding: "10px",
+                  borderRadius: "0 0 5px 5px",
+                }}
+              >
+                {bookDetails?.name}
+              </h3>
               <Typography
                 className="thumb"
                 sx={{ mx: "auto", marginBottom: "20px" }}
@@ -72,16 +84,25 @@ const Enroll = () => {
                   alignItems: "center",
                   textAlign: "left",
                   color: "black",
-                  fontSize: "14px",
+                  fontSize: "18px",
                 }}
               >
-                Detals: {bookDetails?.description} <br />
+                Details: {bookDetails?.description} <br />
               </Typography>
             </Grid>
           </div>
 
           <div className="take">
-            <h3 style={{ color: "black" }}>Fill the purchase form</h3>
+            <h3
+              style={{
+                color: "#CAD5E2",
+                backgroundColor: "#207398",
+                padding: "10px",
+                borderRadius: "0 0 5px 5px",
+              }}
+            >
+              Fill the purchase form
+            </h3>
             <form onSubmit={handleSubmit(onSubmit)} className="point">
               <input
                 defaultValue={bookDetails?.name}
@@ -93,13 +114,18 @@ const Enroll = () => {
               />
               <input
                 defaultValue={user?.displayName}
-                {...register("displayName", { required: true, maxLength: 20 })}
+                {...register("displayName", {
+                  required: true,
+                  maxLength: 20,
+                })}
               />
               <input
                 defaultValue={user?.email}
-                {...register("email", { required: true, maxLength: 50 })}
+                {...register("email", {
+                  required: true,
+                  maxLength: 50,
+                })}
               />
-
               <input
                 type="address"
                 {...register("address")}

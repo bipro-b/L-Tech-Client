@@ -3,7 +3,7 @@ import "./AllEnroll.css";
 const AllEnroll = () => {
   const [applies, setApplies] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/enroll")
+    fetch("https://ltech-server.herokuapp.com/enroll")
       .then((res) => res.json())
       .then((data) => setApplies(data));
   }, []);
@@ -24,7 +24,7 @@ const AllEnroll = () => {
         <div className="title">
           <div>Name</div>
           <div>Enrolled Course</div>
-          <div>Course Code</div>
+          <div>Course Price($)</div>
 
           <div>status</div>
         </div>
@@ -34,7 +34,7 @@ const AllEnroll = () => {
             <div className="allenr my-2">
               <div>{order.displayName}</div>
               <div>{order.name}</div>
-              <div>{order.description}</div>
+              <div>{order.price}</div>
               <div>Progressing</div>
             </div>
           </div>

@@ -8,8 +8,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(165, 42, 42, 0.567);
+    /* background-color: rgba(165, 42, 42, 0.567); */
+    background-color: #120E43;
     padding-top: 10px;
+    border-radius: 7px;
 
 }
 

@@ -37,7 +37,7 @@ const Contact = () => {
 
       <h3
         style={{
-          color: "black",
+          color: "#CAD5E2",
           backgroundColor: "#207398",
           padding: "10px",
           borderRadius: "0 0 5px 5px",

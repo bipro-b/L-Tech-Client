@@ -7,12 +7,14 @@ const Review = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    axios.post("http://localhost:5000/review", data).then((res) => {
-      if (res.data.insertedId) {
-        alert("Your review submit successfully");
-        reset();
-      }
-    });
+    axios
+      .post("hhttps://ltech-server.herokuapp.com/review", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("Your review submit successfully");
+          reset();
+        }
+      });
   };
   return (
     <>

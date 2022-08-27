@@ -9,12 +9,14 @@ const AddCourse = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    axios.post("http://localhost:5000/courses", data).then((res) => {
-      if (res.data.insertedId) {
-        alert("Added successfully");
-        reset();
-      }
-    });
+    axios
+      .post("https://ltech-server.herokuapp.com/courses", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("Added successfully");
+          reset();
+        }
+      });
   };
   return (
     <>
