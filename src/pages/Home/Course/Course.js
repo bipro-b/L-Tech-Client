@@ -39,7 +39,9 @@ const Course = (props) => {
           />
           <br />
           <Link to={`/${_id}`}>
-            <Button className="btn-back ">Enroll Now</Button>{" "}
+            <Button className="btn-bck " style={{ backgroundColor: "#120E43" }}>
+              Enroll Now
+            </Button>{" "}
           </Link>
         </div>
       </div>

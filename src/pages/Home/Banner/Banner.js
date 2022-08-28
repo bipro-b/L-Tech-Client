@@ -61,7 +61,7 @@ const Banner = () => {
           <Row md={1} lg={2}>
             <Col
               className="mx-auto my-auto my-5 "
-              style={{ textAlign: "left" }}
+              style={{ textAlign: "inherit", wordWrap: "break-word" }}
             >
               <h1>
                 Hey,<span style={{ color: "goldenrod" }}>Welcome</span> <br />
