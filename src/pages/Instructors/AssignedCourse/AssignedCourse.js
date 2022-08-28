@@ -8,12 +8,14 @@ const AssignedCourse = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    axios.post("http://localhost:5000/assigncourse", data).then((res) => {
-      if (res.data.insertedId) {
-        alert("Assigned successfully");
-        reset();
-      }
-    });
+    axios
+      .post("https://ltech-server.herokuapp.com/assigncourse", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("Assigned successfully");
+          reset();
+        }
+      });
   };
   return (
     <>
