@@ -5,7 +5,7 @@ import "./Assigned.css";
 const Assigned = () => {
   const [courses, setCourses] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/assigncourse")
+    fetch("https://ltech-server.herokuapp.com/assigncourse")
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);
