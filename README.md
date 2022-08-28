@@ -7,7 +7,7 @@ My project's live link: [L-Tech](https://l-tech-web-app.firebaseapp.com/).
 ### Header & Footer
 
 First We make header and footer components .In header components I have kept NavLink .Those components are shown in every component.
-![Alt text](D:\Web\ClassProject\l-tech-client\src\images\banner1.jpg?raw=true "Header and Footer")
+![Alt text](./images\banner1.jpg)
 
 ### Router ,Material UI & rest components
 
