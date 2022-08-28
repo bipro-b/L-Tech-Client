@@ -60,7 +60,7 @@ const Contact = () => {
             </div>
           </div>
         </Row>
-        <div className="font-icon w-25 d-flex justify-content-center mx-auto justify-content-evenly addr">
+        <div className="font-icon  d-flex justify-content-center mx-auto justify-content-evenly addr">
           <a href="https://github.com/bipro-b" target="_blank" rel="noreferrer">
             <i class="fab fa-github"></i>
           </a>
