@@ -76,70 +76,88 @@ const About = () => {
           </Col>
         </Row>
         <hr />
-        <Row md={1} lg={3} sm={1}>
-          <Col
-            className="card d-flex justify-content-center align-items-center"
+        <Row className="d-flex flex-wrap justifyContent-center-between alignItems-center  ">
+          <div
+            className="  col-md-6 col-lg-4 col-sm-12 card d-flex justify-content-center align-items-center"
             style={{ width: "322px" }}
           >
-            <img
-              style={{ width: "149px", marginTop: "40px", borderRadius: "50%" }}
-              class="img-fluid"
-              src={user2}
-              alt="..."
-            />
-            <div class=" card-body">
-              <p id="clients-say" class=" container card-text">
-                Slate helps you see how many more days you need to work to reach
-                your financial goal for the month and year.
-              </p>
+            <div>
+              <img
+                style={{
+                  width: "149px",
+                  marginTop: "40px",
+                  borderRadius: "50%",
+                }}
+                class="img-fluid"
+                src={user2}
+                alt="..."
+              />
+              <div className=" card-body">
+                <p id="clients-say" class=" container card-text">
+                  Slate helps you see how many more days you need to work to
+                  reach your financial goal for the month and year.
+                </p>
+              </div>
+
+              <p id="name">Colings Mils</p>
+
+              <p id="occupation">MD</p>
             </div>
-
-            <p id="name">Colings Mils</p>
-
-            <p id="occupation">MD</p>
-          </Col>
-          <Col
-            className="card d-flex justify-content-center align-items-center"
+          </div>
+          <div
+            className="col-md-6 col-lg-4 col-sm-12  card d-flex justify-content-center align-items-center"
             style={{ width: "322px" }}
           >
-            <img
-              style={{ width: "149px", marginTop: "40px", borderRadius: "50%" }}
-              class="img-fluid"
-              src={banner30}
-              alt="..."
-            />
-            <div class=" card-body">
-              <p id="clients-say" class=" container card-text">
-                Slate helps you see how many more days you need to work to reach
-                your financial goal for the month and year.
-              </p>
+            <div>
+              <img
+                style={{
+                  width: "149px",
+                  marginTop: "40px",
+                  borderRadius: "50%",
+                }}
+                class="img-fluid"
+                src={banner30}
+                alt="..."
+              />
+              <div class=" card-body">
+                <p id="clients-say" class=" container card-text">
+                  Slate helps you see how many more days you need to work to
+                  reach your financial goal for the month and year.
+                </p>
+              </div>
+
+              <p id="name">Bipro Barai</p>
+
+              <p id="occupation">CEO</p>
             </div>
-
-            <p id="name">Bipro Barai</p>
-
-            <p id="occupation">CEO</p>
-          </Col>
-          <Col
-            className="card d-flex justify-content-center align-items-center"
+          </div>
+          <div
+            className=" col-md-6 col-lg-4 col-sm-12  card d-flex justify-content-center align-items-center"
             style={{ width: "322px" }}
           >
-            <img
-              style={{ width: "149px", marginTop: "40px", borderRadius: "50%" }}
-              class="img-fluid"
-              src={user1}
-              alt="..."
-            />
-            <div class=" card-body">
-              <p id="clients-say" class=" container card-text">
-                Slate helps you see how many more days you need to work to reach
-                your financial goal for the month and year.
-              </p>
+            <div>
+              <img
+                style={{
+                  width: "149px",
+                  marginTop: "40px",
+                  borderRadius: "50%",
+                }}
+                class="img-fluid"
+                src={user1}
+                alt="..."
+              />
+              <div class=" card-body">
+                <p id="clients-say" class=" container card-text">
+                  Slate helps you see how many more days you need to work to
+                  reach your financial goal for the month and year.
+                </p>
+              </div>
+
+              <p id="name">Regina Mils</p>
+
+              <p id="occupation">Manager</p>
             </div>
-
-            <p id="name">Regina Mils</p>
-
-            <p id="occupation">Manager</p>
-          </Col>
+          </div>
         </Row>
       </Container>
       <Footer />

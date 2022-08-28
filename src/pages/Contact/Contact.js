@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { Col, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 import NavBar from "../Shared/Navbar/NavBar";
 import Footer from "../Shared/Footer/Footer";
@@ -47,10 +47,10 @@ const Contact = () => {
       </h3>
       <div>
         <Row md={1} lg={2}>
-          <Col>
+          <div className="col-lg-6 col-sm-12 ">
             <img src={contact} style={{ width: "100%" }} alt="" />
-          </Col>
-          <Col className="d-flex justify-content-center align-items-center">
+          </div>
+          <div className=" col-lg-6 col-sm-12 d-flex justify-content-center align-items-center">
             <div>
               <p className="addr">Address: CTG-ROUZAN-CUET</p>
               <p className="addr">Hotline: 098-569-566</p>
@@ -58,7 +58,7 @@ const Contact = () => {
               <p className="addr">Yahoo: y@yahoo.com</p>
               <p className="addr"> Email:b@gmail.com</p>
             </div>
-          </Col>
+          </div>
         </Row>
         <div className="font-icon w-25 d-flex justify-content-center mx-auto justify-content-evenly addr">
           <a href="https://github.com/bipro-b" target="_blank" rel="noreferrer">
@@ -96,7 +96,7 @@ const Contact = () => {
           Send message
         </div>
 
-        <form ref={form} onSubmit={sendEmail}>
+        <form className="cnt" ref={form} onSubmit={sendEmail}>
           <div className="row  mx-auto">
             <div className="col-8 form-group mx-auto">
               <input
@@ -126,7 +126,7 @@ const Contact = () => {
               <textarea
                 className="form-control"
                 id=""
-                cols="30"
+                cols="20"
                 rows="8"
                 placeholder="Text your message"
                 name="message"

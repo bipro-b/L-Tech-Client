@@ -37,6 +37,11 @@ input {
     text-align: left;
   
   }
-  .addr p{
-  }
-  
+
+@media only screen and (max-width:640px) {
+  .cnt input {
+  width: 100%;
+  margin-bottom: 10px;
+
+}
+}
