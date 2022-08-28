@@ -8,7 +8,7 @@ My project's live link: [L-Tech](https://l-tech-web-app.firebaseapp.com/).
 
 First We make header and footer components .In header components I have kept NavLink .Those components are shown in every component.
 ![Alt text](./images\banner1.jpg)
-![plot](./images.png)
+![CHEESE](https://ibb.co/dM1bM8c)
 
 ### Router ,Material UI & rest components
 
