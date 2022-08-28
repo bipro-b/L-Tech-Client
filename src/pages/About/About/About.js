@@ -3,7 +3,6 @@ import React from "react";
 import { Button, Col, Row } from "react-bootstrap";
 import Footer from "../../Shared/Footer/Footer";
 import NavBar from "../../Shared/Navbar/NavBar";
-import banner1 from "../../../images/banner1.jpg";
 import banner2 from "../../../images/banner2.jpg";
 import banner30 from "../../../images/banner30.jpg";
 import user1 from "../../../images/user-1.png";
@@ -17,7 +16,7 @@ const About = () => {
     <>
       <NavBar />
       <Container className="mt-3">
-        <Row md={1} lg={2}>
+        <Row md={1} lg={2} sm={1}>
           <Col className="mx-auto my-auto my-5 " style={{ textAlign: "left" }}>
             <h1>
               This is ,<span style={{ color: "goldenrod" }}>Lizz Trass</span>{" "}
@@ -77,7 +76,7 @@ const About = () => {
           </Col>
         </Row>
         <hr />
-        <Row md={1} lg={2}>
+        <Row md={1} lg={3} sm={1}>
           <Col
             className="card d-flex justify-content-center align-items-center"
             style={{ width: "322px" }}
