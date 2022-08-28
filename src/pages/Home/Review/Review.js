@@ -15,7 +15,10 @@ const Review = () => {
   // console.log(reviews);
   return (
     <Container>
-      <Box sx={{ flexGrow: 1 }} className="review mb-5 pb-5">
+      <Box
+        sx={{ flexGrow: 1, backgroundColor: "#FD297A #9424F0" }}
+        className="review mb-5 pb-5"
+      >
         <Typography
           sx={{ fontWeight: 500, color: "white", my: 5 }}
           variant="h6"

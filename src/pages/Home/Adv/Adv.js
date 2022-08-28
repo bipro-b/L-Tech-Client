@@ -5,14 +5,20 @@ const Adv = () => {
   return (
     <>
       <div className="mx-auto d-flex justify-content-center my-2">
-        <h3 style={{ color: "AppWorkspace" }}>
-          <p className="animate">
-            Hi Do You want to see yourself as{" "}
-            <span style={{ color: "goldenrod" }}>
-              an emoplyee in 4th industrialrevolution
-            </span>
-            .So, visit our L-tech.Here you wil visit ML,AI,IOT,Robotiics.So no
-            late enroll a course.
+        <h3 style={{ color: "#CAD5E2" }}>
+          <p
+            style={{
+              color: "#CAD5E2",
+              backgroundColor: "#207398",
+              padding: "15px",
+
+              borderRadius: "0 50px 0px 50px",
+            }}
+            className="animate"
+          >
+            Hi Dear, visitors enroll yourself as a learner for{" "}
+            <span style={{ color: "goldenrod" }}>getting job</span> in 4 th
+            industrial revolution.
           </p>
         </h3>
       </div>

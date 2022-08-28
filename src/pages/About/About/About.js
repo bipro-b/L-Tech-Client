@@ -1,6 +1,6 @@
 import { Container } from "@mui/material";
 import React from "react";
-import { Button, Col, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import Footer from "../../Shared/Footer/Footer";
 import NavBar from "../../Shared/Navbar/NavBar";
 import banner2 from "../../../images/banner2.jpg";
@@ -8,7 +8,7 @@ import banner30 from "../../../images/banner30.jpg";
 import user1 from "../../../images/user-1.png";
 import user2 from "../../../images/user-2.png";
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./About.css";
 
 const About = () => {

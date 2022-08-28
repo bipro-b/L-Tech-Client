@@ -1,5 +1,6 @@
 .review {
-  background-color: rgba(0, 0, 0, 0.605);
+  background-image: linear-gradient(#FD297A #9424F0);
+  background-image: linear-gradient(rgba(253, 41, 122, 0.603),rgba(148, 36, 240, 0.668));
   padding-top: 5px;
   padding-bottom: 7px;
 }
