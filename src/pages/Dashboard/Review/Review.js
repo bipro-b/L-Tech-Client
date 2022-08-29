@@ -8,7 +8,7 @@ const Review = () => {
   const onSubmit = (data) => {
     console.log(data);
     axios
-      .post("hhttps://ltech-server.herokuapp.com/review", data)
+      .post("https://ltech-server.herokuapp.com/review", data)
       .then((res) => {
         if (res.data.insertedId) {
           alert("Your review submit successfully");

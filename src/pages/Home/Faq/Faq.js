@@ -6,7 +6,7 @@ const Faq = () => {
   return (
     <Container className="my-5">
       <h2 className="mb-3">
-        Frequently <span style={{ color: "goldenrod" }}>Ask and Answere</span>
+        Frequently <span style={{ color: "goldenrod" }}>Ask and Answer</span>
       </h2>
       <Row xs={1} md={1} lg={2}>
         <Accordion className="text">

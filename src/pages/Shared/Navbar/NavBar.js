@@ -10,7 +10,8 @@ const NavBar = () => {
     fontWeight: "bold",
     color: "rgba(0, 0, 0, 0.312)",
   };
-  const { user, logout } = useAuth();
+  const { user, logout, teacher } = useAuth();
+  console.log(teacher);
   return (
     <div className="header ">
       <Navbar
@@ -44,6 +45,11 @@ const NavBar = () => {
                 Contact
               </NavLink>
             </Nav>
+            {teacher && (
+              <NavLink to="/instructor" activeStyle={activeStyle}>
+                instructors
+              </NavLink>
+            )}
             {user.email && (
               <NavLink to="/dashboard" activeStyle={activeStyle}>
                 Dashbaord

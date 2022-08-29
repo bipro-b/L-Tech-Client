@@ -90,7 +90,7 @@ const useFirebase = () => {
   }, [user.email]);
 
   useEffect(() => {
-    fetch(`https://ltech-server.herokuapp.com/users/${user.email}`)
+    fetch(`https://ltech-server.herokuapp.com/user/${user.email}`)
       .then((res) => res.json())
       .then((data) => setTeacher(data.teacher));
   }, [user.email]);

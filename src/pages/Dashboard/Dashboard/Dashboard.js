@@ -9,7 +9,7 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-// import './Dashboard.css'
+
 import {
   /* Switch,
     Route, */
@@ -30,7 +30,6 @@ import ManageCourse from "../ManageCourse/ManageCourse";
 import Show from "../Show/Show";
 import AssignCourse from "../AssignCourse/AssignCourse";
 import UpcomingCourse from "../UpcomingCourse/UpcomingCourse";
-import Instructor from "../../Instructors/Instructor/Instructor";
 
 const drawerWidth = 200;
 
@@ -44,13 +43,6 @@ function Dashboard(props) {
     setMobileOpen(!mobileOpen);
   };
 
-  const [members, setMembers] = React.useState([]);
-  React.useEffect(() => {
-    fetch("https://ltech-server.herokuapp.com/users")
-      .then((res) => res.json())
-      .then((data) => setMembers(data));
-  }, []);
-  const { _id } = members;
   const drawer = (
     <div className="door">
       {/* <Toolbar /> */}
@@ -66,8 +58,6 @@ function Dashboard(props) {
       </Link>{" "}
       <br />
       <Box sx={{ textAlign: "left" }}>
-        {/* <Link style={{ textDecoration: 'none' }} to="/home"> <Button color="inherit">Products</Button></Link> <br /> */}
-
         {!admin && (
           <Box>
             <Link style={{ textDecoration: "none" }} to={`/dashboard/myEnroll`}>
@@ -79,17 +69,6 @@ function Dashboard(props) {
               {" "}
               <Button color="inherit">Review</Button>
             </NavLink>
-            {/* <br /> */}
-            {/*  <Link
-              style={{ textDecoration: "none" }}
-              to={`/dashboard/payfee/${_id}`}
-            >
-              <Button color="inherit">Pay Fee</Button>
-            </Link> */}
-            {/*  <NavLink style={{ textDecoration: "none" }} to="donate">
-              {" "}
-              <Button color="inherit">Donate</Button>
-            </NavLink> */}
             <br />
             <Button onClick={logout} color="inherit">
               Logout
@@ -122,19 +101,10 @@ function Dashboard(props) {
             {" "}
             <Button color="inherit">Add Course</Button>
           </Link>
-
-          {/* <Link style={{ textDecoration: 'none' }} to={`/dashboard/manageproduct`}> <Button color="inherit">Manage Products</Button></Link><br /> */}
-          {/*  <Link style={{ textDecoration: "none" }} to={`/dashboard/addTeacher`}>
+          <Link style={{ textDecoration: "none" }} to={`/dashboard/addTeacher`}>
             {" "}
             <Button color="inherit">Add Teacher</Button>
-          </Link>{" "} */}
-          {/*  <Link
-            style={{ textDecoration: "none" }}
-            to={`/dashboard/paidmembers`}
-          >
-            {" "}
-            <Button color="inherit">Paid Members</Button>
-          </Link>{" "} */}
+          </Link>
           <br />
           <Button onClick={logout} sx={{ color: "inherit" }}>
             Logout
@@ -185,16 +155,6 @@ function Dashboard(props) {
               <Button color="inherit">Home</Button>
             </NavLink>
           </Typography>
-          {admin && (
-            <Typography variant="h6" noWrap component="div">
-              <NavLink
-                style={{ textDecoration: "none", color: "white" }}
-                to="/instructor"
-              >
-                <Button color="inherit">Instrutors</Button>
-              </NavLink>
-            </Typography>
-          )}
         </Toolbar>
       </AppBar>
       <Box
