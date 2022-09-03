@@ -23,11 +23,12 @@ const About = () => {
               <br />
               who is the founder of{" "}
               <span style={{ color: "goldenrod" }}>L-Tech</span>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium inventore perferendis numquam laborum sunt natus odit
-              magni quasi, odio corrupti quos alias. Incidunt laborum cupiditate
-              provident delectus, quasi dicta officia saepe optio blanditiis
-              quam!
+              Learn how to compete in the modern world by enrolling in one of
+              the L-Tech courses. Enroll in our data science, Internet of
+              Things, machine learning, artificial intelligence, deep learning,
+              and other courses to get ready. You'll learn how to create
+              anything, including games, websites, and apps. Select a course
+              from a selection that will appeal too.
             </h1>
             <h4 className="mt-2" style={{ color: "red" }}>
               Contact Info

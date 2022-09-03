@@ -34,11 +34,12 @@ const Banner = () => {
               <h1>
                 Hey,<span style={{ color: "goldenrod" }}>Welcome</span> <br />
                 to our <span style={{ color: "goldenrod" }}>L-Tech</span> web
-                page Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium inventore perferendis numquam laborum sunt natus odit
-                magni quasi, odio corrupti quos alias. Incidunt laborum
-                cupiditate provident delectus, quasi dicta officia saepe optio
-                blanditiis quam!
+                page. Learn how to compete in the modern world by enrolling in
+                one of the L-Tech courses. Enroll in our data science, Internet
+                of Things, machine learning, artificial intelligence, deep lear-
+                ning, and other courses to get ready. You'll learn how to create
+                anything, including games, websites, and apps. Select a course
+                course from a selection that will appeal too.
               </h1>
               <Link to="/about">
                 {" "}
@@ -66,11 +67,12 @@ const Banner = () => {
               <h1>
                 Hey,<span style={{ color: "goldenrod" }}>Welcome</span> <br />
                 to our <span style={{ color: "goldenrod" }}>L-Tech</span> web
-                page Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium inventore perferendis numquam laborum sunt natus odit
-                magni quasi, odio corrupti quos alias. Incidunt laborum
-                cupiditate provident delectus, quasi dicta officia saepe optio
-                blanditiis quam!
+                page. Web development, machine learning, IOT, deep learning,-
+                artificial intelligence, block chain, and other fields are as
+                vast as the internet itself. Much of our social and professional
+                lives take place on the internet, prompting the development of
+                new industries aimed at creating, managing, and debugging the
+                websites and applications on which we increasingly rely.
               </h1>
               <Link to="/about">
                 <Button variant="flat" size="xxl">
@@ -97,11 +99,12 @@ const Banner = () => {
               <h1>
                 Hey,<span style={{ color: "goldenrod" }}>Welcome</span> <br />
                 to our <span style={{ color: "goldenrod" }}>L-Tech</span> web
-                page Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium inventore perferendis numquam laborum sunt natus odit
-                magni quasi, odio corrupti quos alias. Incidunt laborum
-                cupiditate provident delectus, quasi dicta officia saepe optio
-                blanditiis quam!
+                page. Skills for your present and your future. Get started with
+                us. Enroll in our data science, Internet of Things, machine
+                learning, artificial intelligence, deep learning, and other
+                courses to get ready. You'll learn how to create anything,
+                including games, websites, and apps. Select a course from a
+                selection that will appeal too.
               </h1>
               <Link to="/about">
                 <Button variant="flat" size="xxl">

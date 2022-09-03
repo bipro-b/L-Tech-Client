@@ -13,89 +13,56 @@ const Faq = () => {
           <Accordion.Item eventKey="0">
             <Accordion.Header>Who is For this course?</Accordion.Header>
             <Accordion.Body className="accord">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Any one can enroll for any courses. It one is more enthusiast.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
             <Accordion.Header>
-              What is prerequisite for this qourse
+              What is prerequisite for these courses?
             </Accordion.Header>
             <Accordion.Body className="accord">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              The prerequisite for this course will be having a laptop or a
+              desktop html/python/javascript etc editor active internet
+              connection.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="2">
             <Accordion.Header>How to get your certificate</Accordion.Header>
             <Accordion.Body className="accord">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              The only way to get the certificate of a course is to complete the
+              course as early as possible.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="3">
-            <Accordion.Header>Will you be skillfull?</Accordion.Header>
+            <Accordion.Header>Will you be skillful?</Accordion.Header>
             <Accordion.Body className="accord">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Yes, our courses are embedded with projects at the end which are
+              very useful and it will give you real world experience.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="4">
             <Accordion.Header>
-              How mouch time you have to give for this course?
+              How much time you have to give for this course?
             </Accordion.Header>
             <Accordion.Body className="accord">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              The courses we are offering have lifetime access. If you are
+              enrolled in any of the courses you can complete the course any
+              time.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="5">
-            <Accordion.Header>Have any monoey back system?</Accordion.Header>
+            <Accordion.Header>Have any money back system?</Accordion.Header>
             <Accordion.Body className="accord">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Yes, we have . User can cancel any course if they have any problem
+              and they will be refunded within 48 hours.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="6">
             <Accordion.Header>Free courses are available?</Accordion.Header>
             <Accordion.Body className="accord">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Yes, we have some useful and interesting free courses for our
+              users. But they will not get the privilege of paid courses like
+              lifetime enrollment, certificate etc.
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>

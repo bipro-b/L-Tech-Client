@@ -47,7 +47,7 @@ const NavBar = () => {
             </Nav>
             {teacher && (
               <NavLink to="/instructor" activeStyle={activeStyle}>
-                instructors
+                Instructor
               </NavLink>
             )}
             {user.email && (

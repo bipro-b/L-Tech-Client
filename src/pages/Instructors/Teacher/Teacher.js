@@ -28,7 +28,7 @@ const Teacher = () => {
           <div>Image</div>
           <div>Name</div>
           <div>Position</div>
-          <div>Deletion</div>
+          <div>Location</div>
         </div>
         {teachers.map((teacher) => (
           <div key={teacher.id}>
