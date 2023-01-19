@@ -13,7 +13,7 @@ const Faq = () => {
           <Accordion.Item eventKey="0">
             <Accordion.Header>Who is For this course?</Accordion.Header>
             <Accordion.Body className="accord">
-              Any one can enroll for any courses. It one is more enthusiast.
+              Any one can "enroll" for any courses. It one is more enthusiast.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">

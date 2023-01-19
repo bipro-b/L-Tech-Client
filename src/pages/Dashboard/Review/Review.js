@@ -7,14 +7,12 @@ const Review = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    axios
-      .post("https://ltech-server.herokuapp.com/review", data)
-      .then((res) => {
-        if (res.data.insertedId) {
-          alert("Your review submit successfully");
-          reset();
-        }
-      });
+    axios.post("https://ltechebackened.vercel.app/review", data).then((res) => {
+      if (res.data.insertedId) {
+        alert("Your review submit successfully");
+        reset();
+      }
+    });
   };
   return (
     <>

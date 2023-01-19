@@ -19,7 +19,7 @@ const Enroll = () => {
   const [bookDetails, setBookDetails] = useState([]);
 
   useEffect(() => {
-    fetch("https://ltech-server.herokuapp.com/courses")
+    fetch("https://ltechebackened.vercel.app/courses")
       .then((res) => res.json())
       .then((data) => setDetails(data));
   }, []);
@@ -30,14 +30,12 @@ const Enroll = () => {
   }, [details, bookId]);
 
   const onSubmit = (data) => {
-    axios
-      .post("https://ltech-server.herokuapp.com/enroll", data)
-      .then((res) => {
-        if (res.data.insertedId) {
-          alert("Submit successfully");
-          reset();
-        }
-      });
+    axios.post("https://ltechebackened.vercel.app/enroll", data).then((res) => {
+      if (res.data.insertedId) {
+        alert("Submit successfully");
+        reset();
+      }
+    });
   };
   return (
     <>

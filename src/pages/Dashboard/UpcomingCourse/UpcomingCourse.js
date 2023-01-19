@@ -7,7 +7,7 @@ import "./UpcomingCourse.css";
 const UpcomingCourse = () => {
   const [courses, setCourses] = useState([]);
   useEffect(() => {
-    fetch("https://ltech-server.herokuapp.com/assigncourse")
+    fetch("https://ltechebackened.vercel.app/assigncourse")
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);

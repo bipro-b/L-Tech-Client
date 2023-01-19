@@ -11,7 +11,7 @@ const Courses = () => {
   const [isLoading, setLoading] = useState(false);
   const [display, setDisplay] = useState([]);
   useEffect(() => {
-    fetch("https://ltech-server.herokuapp.com/courses")
+    fetch("https://ltechebackened.vercel.app/courses")
       // fetch("./courses.json")
       .then((res) => res.json())
       .then((data) => {

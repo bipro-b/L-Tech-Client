@@ -3,7 +3,7 @@ import "./AllEnroll.css";
 const AllEnroll = () => {
   const [applies, setApplies] = useState([]);
   useEffect(() => {
-    fetch("https://ltech-server.herokuapp.com/enroll")
+    fetch("https://ltechebackened.vercel.app/enroll")
       .then((res) => res.json())
       .then((data) => setApplies(data));
   }, []);

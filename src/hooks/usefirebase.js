@@ -84,13 +84,13 @@ const useFirebase = () => {
   }, [auth]);
 
   useEffect(() => {
-    fetch(`https://ltech-server.herokuapp.com/users/${user.email}`)
+    fetch(`https://ltechebackened.vercel.app/users/${user.email}`)
       .then((res) => res.json())
       .then((data) => setAdmin(data.admin));
   }, [user.email]);
 
   useEffect(() => {
-    fetch(`https://ltech-server.herokuapp.com/user/${user.email}`)
+    fetch(`https://ltechebackened.vercel.app/user/${user.email}`)
       .then((res) => res.json())
       .then((data) => setTeacher(data.teacher));
   }, [user.email]);
@@ -109,7 +109,7 @@ const useFirebase = () => {
 
   const saveUser = (email, displayName, method) => {
     const user = { email, displayName };
-    fetch("https://ltech-server.herokuapp.com/users", {
+    fetch("https://ltechebackened.vercel.app/users", {
       method: method,
       headers: {
         "content-type": "application/json",

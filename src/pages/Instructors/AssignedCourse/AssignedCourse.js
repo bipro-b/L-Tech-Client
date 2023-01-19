@@ -9,7 +9,7 @@ const AssignedCourse = () => {
   const onSubmit = (data) => {
     console.log(data);
     axios
-      .post("https://ltech-server.herokuapp.com/assigncourse", data)
+      .post("https://ltechebackened.vercel.app/assigncourse", data)
       .then((res) => {
         if (res.data.insertedId) {
           alert("Assigned successfully");
