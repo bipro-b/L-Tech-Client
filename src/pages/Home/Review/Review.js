@@ -8,7 +8,7 @@ import "./Review.css";
 const Review = () => {
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
-    fetch("https://ltechebackened.vercel.app/review")
+    fetch("https://l-tech-server.onrender.com/review")
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, []);

@@ -5,7 +5,7 @@ import "./Assigned.css";
 const Assigned = () => {
   const [courses, setCourses] = useState([]);
   useEffect(() => {
-    fetch("https://ltechebackened.vercel.app/assigncourse")
+    fetch("https://l-tech-server.onrender.com/assigncourse")
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);

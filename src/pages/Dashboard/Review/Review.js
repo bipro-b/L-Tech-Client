@@ -7,7 +7,7 @@ const Review = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    axios.post("https://ltechebackened.vercel.app/review", data).then((res) => {
+    axios.post("https://l-tech-server.onrender.com/review", data).then((res) => {
       if (res.data.insertedId) {
         alert("Your review submit successfully");
         reset();

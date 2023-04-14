@@ -5,7 +5,7 @@ const ManageCourse = () => {
   const [cars, setCars] = useState([]);
 
   useEffect(() => {
-    fetch("https://ltechebackened.vercel.app/courses")
+    fetch("https://l-tech-server.onrender.com/courses")
       .then((res) => res.json())
       .then((data) => setCars(data));
   }, []);
@@ -14,7 +14,7 @@ const ManageCourse = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you want to delete?");
     if (proceed) {
-      const url = `https://ltechebackened.vercel.app/courses/${id}`;
+      const url = `https://l-tech-server.onrender.com/courses/${id}`;
       fetch(url, {
         method: "DELETE",
       })
@@ -22,7 +22,7 @@ const ManageCourse = () => {
         .then((data) => {
           console.log(data);
           if (data.deletedCount) {
-            alert("Deleted succesfully");
+            alert("Deleted successfully");
             const remaining = cars.filter((car) => car._id !== id);
             setCars(remaining);
           }

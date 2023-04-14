@@ -11,7 +11,7 @@ const AddAdmin = () => {
   };
   const handleAdminSubmit = (e) => {
     const user = { email };
-    fetch("https://ltechebackened.vercel.app/users/admin", {
+    fetch("https://l-tech-server.onrender.com/users/admin", {
       method: "PUT",
       headers: {
         authorization: `Bearer ${token}`,

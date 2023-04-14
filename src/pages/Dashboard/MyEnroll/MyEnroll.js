@@ -9,7 +9,7 @@ const MyEnroll = () => {
   const { user } = useAuth();
   const [orders, setOrders] = useState([]);
   useEffect(() => {
-    fetch(`https://ltechebackened.vercel.app/enroll?email=${user.email}`)
+    fetch(`https://l-tech-server.onrender.com/enroll?email=${user.email}`)
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, [user.email]);

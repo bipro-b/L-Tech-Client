@@ -19,7 +19,7 @@ const Enroll = () => {
   const [bookDetails, setBookDetails] = useState([]);
 
   useEffect(() => {
-    fetch("https://ltechebackened.vercel.app/courses")
+    fetch("https://l-tech-server.onrender.com/courses")
       .then((res) => res.json())
       .then((data) => setDetails(data));
   }, []);
@@ -30,7 +30,7 @@ const Enroll = () => {
   }, [details, bookId]);
 
   const onSubmit = (data) => {
-    axios.post("https://ltechebackened.vercel.app/enroll", data).then((res) => {
+    axios.post("https://l-tech-server.onrender.com/enroll", data).then((res) => {
       if (res.data.insertedId) {
         alert("Submit successfully");
         reset();
